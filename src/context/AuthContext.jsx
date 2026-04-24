@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem('token', idToken);
         
         try {
-          const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
+          const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://bajaj-finserv-backend-production-84d5.up.railway.app';
           
           // Get pending details from state or session storage if page reloaded
           const storedDetails = sessionStorage.getItem('pendingAuthDetails');
